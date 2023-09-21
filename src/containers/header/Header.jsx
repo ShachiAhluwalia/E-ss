@@ -13,10 +13,7 @@ const Header = () => (
         <button type="button">Get Started</button>
       </div>
 
-      <div className="E-waste__header-content__people">
-        <img src={people} />
-        <p>1,600 people requested access a visit in last 24 hours</p>
-      </div>
+      
     </div>
 
     <div className="E-waste__header-image">

@@ -1,24 +1,20 @@
 import React from 'react';
-import {Footer, Blog, Posibility,Features,WasE,Header} from './containers';
-import {CTA, Brand,Navbar} from './components';
-import './App.css';
-const App = () => {
+import { Blog,WasE,FloatingButton} from './containers';
+import {Home,Navbar} from './components';
+import { Routes, Route} from 'react-router-dom';
+function App() {
   return (
-    <div className='App'>
-        <div className='gradient_bg'>
+    <>
             <Navbar />
-            <Header />
-        </div>
-        <Brand />
-        <WasE />
-        <Features />
-        <Posibility/>
-        <CTA/>
-        <Blog />
-        <Footer/>
+            <FloatingButton/>
 
-    </div>
-  )
+            <Routes>
+              <Route path='/' element={<Home/>}/>
+              <Route path='/WasE' element={<WasE/>}/>
+              <Route path='/blog' element={<Blog/>}/>
+            </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
