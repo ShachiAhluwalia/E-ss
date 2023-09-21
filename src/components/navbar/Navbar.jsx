@@ -1,24 +1,10 @@
 import React,{useState} from 'react';
-import * as Falcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import { Link } from "react-router-dom";
-import {IconContext} from "react-icons";
+
 import './Navbar.css';
 
-import {RiMenu3Line, RiCloseLin, RiCentosFill, RiCloseLine} from 'react-icons/ri';
+import {RiMenu3Line,  RiCloseLine} from 'react-icons/ri';
 import logo from '../../assets/Logo1.png';
-const Menu=()=>(
-  
-  <>
-  <p><a href="#home">Home</a></p>
-  <p><a href="#WasE">What is E-Waste?</a></p>
-  <p><a href="#possibility">E-waste</a></p>
-  <p><a href="#features">Locator</a></p>
-  <p><a href="#blog">Library</a></p>
- 
-  </>
 
-);
 const Navbar = () => {
   const [toggleMenu, setToggleMenu]=useState(false);
   return (

@@ -5,7 +5,7 @@ import {home,search,maps,user} from './import';
 const Brand = () => (
   <div className="E-waste__brand section__padding">
     <div>
-    <img src={home} alt="home" id="myImage" onclick="window.location.href='your_link_here';" style="cursor: pointer;" />
+    <img src={home} alt="home" id="myImage" onclick="window.location.href='./Home/home';" style={{ cursor: 'pointer' }}/>
     </div>
     <div>
       <img src={search} alt="search"/>
